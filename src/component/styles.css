@@ -1,0 +1,33 @@
+.left-column {
+	width: 30%;
+	height: 100vh;
+	background-color: green;
+}
+
+.right-column {
+	width: 70%;
+	height: 100vh;
+	position: relative;
+}
+
+.main {
+	overflow: hidden;
+	display: flex;
+}
+
+@media only screen and (max-width: 800px) and (min-width: 300px) {
+	.main {
+		display: block;
+	}
+	.left-column {
+		width: 100vh;
+		height: 15rem;
+		background-color: green;
+	}
+
+	.right-column {
+		width: 100vh;
+		height: 20rem;
+		background-color: blue;
+	}
+}
